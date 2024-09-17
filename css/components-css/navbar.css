@@ -36,9 +36,14 @@ header {
 .tn-menu div {
   height: 100%;
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid #555555;
   border-radius: 3px;
   margin: 0;
+}
+
+.tn-menu i {
+  font-size: 40px;
+  color: black;
 }
 
 /* STYLES FOR THE TOP NAV LINK */
@@ -62,11 +67,11 @@ header {
   content: "";
   position: absolute;
   left: 0;
-  top: -8px; /* Adjust to place the overline above the text */
+  top: -8px;
   width: 0;
   height: 4px;
-  background-color: rgb(238, 126, 1); /* Color of the overline */
-  transition: width 0.4s ease; /* Animation for expanding the line */
+  background-color: rgb(238, 126, 1);
+  transition: width 0.4s ease;
 }
 
 .tn-link:hover::before {
@@ -91,7 +96,7 @@ header {
   margin-left: 5px;
 }
 
-/* END OF STYLES FOR THE TOP NAV */
+/* STYLES FOR THE MIDDLE NAV */
 
 .middle-nav {
   width: 100%;
@@ -125,6 +130,37 @@ header {
   transition: 2s;
 }
 
+/* STYLES FOR THE MAIN NAV */
+
+
+.bn-link {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 5px 15px;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.bn-link:hover {
+  background-color: #555555;
+}
+
+.bn-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 4px;
+  background-color: rgb(238, 126, 1);
+  transition: width 0.4s ease;
+}
+
+.bn-link:hover::before {
+  width: 100%;
+}
 
 
 
