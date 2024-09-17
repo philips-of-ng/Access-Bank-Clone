@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Effra_Reg';
+  font-family: "Effra_Reg";
   src: url(../../fonts/Effra/Effra.ttf);
 }
 
@@ -7,15 +7,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Effra_Reg', Arial, Helvetica, sans-serif;
+  font-family: "Effra_Reg", Arial, Helvetica, sans-serif;
 }
 
 header {
   background-color: #f1f1f1;
 }
 
+/* STYLES FOR THE TOP NAV */
+
 .top-nav {
-  width: 95%;
+  width: 92%;
   background-color: #f1f1f1;
   margin: auto;
   padding: 8px 0;
@@ -28,6 +30,7 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 2px;
   display: none;
+  border: none;
 }
 
 .tn-menu div {
@@ -51,7 +54,7 @@ header {
 }
 
 .tn-link:hover {
-  color: rgb(238,126,1);
+  color: rgb(238, 126, 1);
   transition: 0.3s;
 }
 
@@ -62,7 +65,7 @@ header {
   top: -8px; /* Adjust to place the overline above the text */
   width: 0;
   height: 4px;
-  background-color: rgb(238,126,1); /* Color of the overline */
+  background-color: rgb(238, 126, 1); /* Color of the overline */
   transition: width 0.4s ease; /* Animation for expanding the line */
 }
 
@@ -87,6 +90,49 @@ header {
   margin: 0;
   margin-left: 5px;
 }
+
+/* END OF STYLES FOR THE TOP NAV */
+
+.middle-nav {
+  width: 100%;
+  background-color: rgb(1,64,134);
+  display: none;
+  height: 0;
+  transition: 2s;
+}
+
+.middle-nav ul {
+  list-style-type: none;
+}
+
+.middle-nav ul li a {
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 7px 0;
+}
+
+.middle-nav ul li .orange-link {
+  font-weight: 600;
+  color: rgb(238, 126, 1);
+}
+
+.middle-nav-open {
+  height: fit-content;
+  display: block;
+  transition: 2s;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 992px) {
   .tn-menu {
