@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Effra_Reg';
+  src: url(../../fonts/Effra/Effra.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Effra_Reg', Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #f1f1f1;
+}
+
+.top-nav {
+  width: 95%;
+  background-color: #f1f1f1;
+  margin: auto;
+  padding: 8px 0;
+}
+
+.tn-menu {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  display: none;
+}
+
+.tn-menu div {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 0;
+}
+
+/* STYLES FOR THE TOP NAV LINK */
+.tn-link {
+  color: #555555;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 15px;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.tn-link:hover {
+  color: rgb(238,126,1);
+  transition: 0.3s;
+}
+
+.tn-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -8px; /* Adjust to place the overline above the text */
+  width: 0;
+  height: 4px;
+  background-color: rgb(238,126,1); /* Color of the overline */
+  transition: width 0.4s ease; /* Animation for expanding the line */
+}
+
+.tn-link:hover::before {
+  width: 100%;
+}
+
+/* END OF TOP NAV LINK STYLES */
+
+.top-nav p {
+  font-size: 13px;
+  color: #555555;
+  display: inline;
+  margin: 0;
+  margin-right: 5px;
+  display: flex;
+  align-items: center !important;
+}
+
+.top-nav i {
+  color: #555555;
+  margin: 0;
+  margin-left: 5px;
+}
+
+@media (max-width: 992px) {
+  .tn-menu {
+    display: grid !important;
+  }
+
+  .top-nav-left {
+    display: none !important;
+  }
+}
