@@ -357,6 +357,15 @@ header {
   background-color: rgb;
 }
 
+/* THIS IS THE STYLE FOR THE BOTTOM NAV FOR MOBILE */
+
+.bottom-nav-mbv {
+  width: 100%;
+  height: 300px;
+  background-color: rebeccapurple;
+}
+
+
 
 @media (max-width: 1060px) {
   .bn-link {

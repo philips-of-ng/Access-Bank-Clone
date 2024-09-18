@@ -18,6 +18,7 @@ openMiddleNav.addEventListener('click', () => {
 });
 
 // THIS IS THE CODE THAT OPENS AND CLOSES THE INTERNET BANKING OFFCANVAS
+
 const ibdControl = document.getElementById('internet-banking-dsv-control');
 const ibdOffcanvas = document.getElementById('internet-banking-dsv');
 let focusOffcanvas = false;
@@ -81,9 +82,6 @@ internetMobileControl.addEventListener('click', () => {
     }, { once: true })
   }
 })
-
-
-
 
 
 
