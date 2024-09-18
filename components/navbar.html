@@ -124,8 +124,8 @@
       </button>
 
       <div class="bn-mobile-nav-div d-flex align-items-center justify-content-between">
-        <button class="bn-mobile-online-banking">
-          <i class='bx bx-lock-alt' ></i><p>Online Banking</p>
+        <button class="bn-mobile-online-banking" id="internet-banking-mbv-control">
+          <i id="x-or-lock" class='bx bx-lock-alt' ></i><p>Online Banking</p>
         </button>
 
         <button class="mobile-search-btn"><i class='bx bx-search'></i></button>
@@ -134,6 +134,42 @@
       </div>
     </div>
 
+    <!-- THIS IS THE CODE FOR THE INTERNET BANKING DROPDOWN THAT ONLY WORKS ON MOBILE WHEN YOU CLICK THE INTERNET BANKING BUTTON -->
+
+    <div class="internet-banking-mbv animate__animated" id="internet-banking-mbv">
+      <div class="ib-dsv-head">
+        <h4 class="text-center">Internet Banking</h4>
+      </div>
+
+      <div class="ib-dsv-body">
+        <button class="individual">
+          <div class="d-flex justify-content-between align-items-center">
+            <i class='bx bx-user'></i>
+            <p>Individual</p>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <i class='bx bx-right-top-arrow-circle'></i>
+          </div>
+        </button>
+
+        <button class="business">
+          <div class="d-flex justify-content-between align-items-center">
+            <i class='bx bx-user'></i>
+            <p>Business</p>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <i class='bx bx-right-top-arrow-circle'></i>
+          </div>
+        </button>
+      </div>
+    </div>
+
+
+    <div class="bottom-nav-mbv">
+
+    </div>
   </header>
   
 

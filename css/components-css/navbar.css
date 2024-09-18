@@ -267,12 +267,13 @@ header {
 .internet-banking-dsv {
   width: 300px;
   height: 100vh;
-  background-color: green;
+  background-color: white;
   position: fixed;
   z-index: 2;
   display: none;
   right: 0;
   top: 0;
+  transition: 0.2s;
 }
 
 .internet-banking-dsv .ib-dsv-head {
@@ -281,7 +282,7 @@ header {
 
 .internet-banking-dsv .ib-dsv-body {
   padding: 15px;
-  background-color: red;
+  background-color: white;
 }
 
 .ib-dsv-body button {
@@ -344,7 +345,17 @@ header {
   display: block !important;
 }
 
+/* THIS IS THE CODE FOR THE INTERNET BANKING DROPDOWN THAT ONLY WORKS ON MOBILE */
 
+.internet-banking-mbv {
+  padding: 20px 15px;
+  display: none;
+}
+
+.activate {
+  display: block !important;
+  background-color: rgb;
+}
 
 
 @media (max-width: 1060px) {

@@ -51,6 +51,39 @@ ibdOffcanvas.addEventListener('mouseleave', () => {
   closeOffcanvas();
 });
 
+// THIS IS THE CODE THAT OPENS AND CLOSE THE INTERNET BANKING DROPDOWN THAT ONLY WORKS ON MOBILE SCREEN WHEN YOU CLICK THE INTERNET BANKING BUTTON //
+
+const internetMobileControl = document.getElementById('internet-banking-mbv-control')
+
+const internetMobile = document.getElementById('internet-banking-mbv')
+
+const xOrLock = document.getElementById('x-or-lock')
+
+internetMobileControl.addEventListener('click', () => {
+  if (!internetMobile.classList.contains('activate')) {
+    internetMobile.classList.add('animate__flipInX', 'activate')
+
+    internetMobileControl.style.color = 'white'
+    internetMobileControl.style.backgroundColor = `rgb(238, 126, 1)`
+
+    xOrLock.classList.remove('bx-lock-alt')
+    xOrLock.classList.add('bx-x')
+  } else if (internetMobile.classList.contains('activate')) {
+    internetMobile.classList.add('animate__flipOutX')
+
+    internetMobile.addEventListener('animationend', () => {
+      internetMobile.classList.remove('activate', 'animate__flipOutX')
+      xOrLock.classList.add('bx-lock-alt')
+      xOrLock.classList.remove('bx-x')
+
+      internetMobileControl.style.color = `rgb(238, 126, 1)`
+      internetMobileControl.style.backgroundColor = `white`
+    }, { once: true })
+  }
+})
+
+
+
 
 
 
