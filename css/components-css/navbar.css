@@ -270,21 +270,79 @@ header {
   background-color: green;
   position: fixed;
   z-index: 2;
+  display: none;
+  right: 0;
+  top: 0;
 }
 
 .internet-banking-dsv .ib-dsv-head {
   padding: 10px;
 }
 
+.internet-banking-dsv .ib-dsv-body {
+  padding: 15px;
+  background-color: red;
+}
 
+.ib-dsv-body button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 22px;
+  padding: 12px;
+  margin: 20px 0;
+}
 
+.ib-dsv-body button div p {
+  margin: 0;
+  margin-bottom: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.ib-dsv-body button div i {
+  margin-right: 5px;
+}
 
+.individual {
+  color: black !important;
+  border: 2px solid rgb(164,197,25);
+  background-color: rgb(164,197,25);
+  transition: 0.3s;
+}
 
+.individual:hover {
+  background-color: white;
+  transition: 0.3s;
+}
 
+.business {
+  color: white;
+  background-color: rgb(0,65,133);
+  border: 2px solid rgb(0,65,133);
+  transition: 0.3s;
+}
 
+.business:hover {
+  background-color: white;
+  color: rgb(0,65,133);
+  transition: 0.3s;
+}
 
+.advert1 {
+  width: 100%;
+  padding: 10px;
+}
 
+.advert1 img {
+  width: 100%;
+}
+
+.ibd-open {
+  display: block !important;
+}
 
 
 
