@@ -83,6 +83,33 @@ internetMobileControl.addEventListener('click', () => {
   }
 })
 
+//THIS IS THE CODE THAT OPENS AND CLOSES THE BOTTOM NAV DROPDOWN-ACCORDION THAT ONLY WORKS ON MOVILE VIEW WHEN YOU CLICK THE HAMBURGER/MENU BUTTON
+
+
+const bnm = document.getElementById('bottom-nav-mbv')
+const bnmControl = document.getElementById('bottom-nav-mbv-control')
+const bnmIcon = document.getElementById('bnm-icon')
+
+// Animate the menu on click
+bnmControl.addEventListener('click', () => {
+  if (!bnm.classList.contains('activate-bnm')) {
+    bnm.classList.add('animate__fadeInRight', 'activate-bnm')
+    bnmIcon.classList.remove('bx-menu')
+    bnmIcon.classList.add('bx-x')
+  } else if (bnm.classList.contains('activate-bnm')) {
+    bnm.classList.remove('animate__fadeInRight')
+    bnm.classList.add('animate__fadeOutRight')
+
+    bnm.addEventListener('animationend', () => {
+      bnm.classList.remove('activate-bnm', 'animate__fadeOutRight')
+    }, { once: true })
+    bnmIcon.classList.remove('bx-x')
+    bnmIcon.classList.add('bx-menu')
+  }
+})
+
+
+
 
 
 
