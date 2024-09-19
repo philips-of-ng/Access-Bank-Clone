@@ -5,17 +5,19 @@ const middleNav = document.getElementById('middle-nav');
 
 openMiddleNav.addEventListener('click', () => {
   if (!middleNav.classList.contains('middle-nav-open')) {
-    middleNav.classList.remove('animate__backOutRight');
-    middleNav.classList.add('animate__backInLeft', 'middle-nav-open');
+    middleNav.classList.remove('animate__fadeOutRight');
+    middleNav.classList.add('animate__fadeInLeft', 'middle-nav-open');
     openMiddleNav.innerHTML = `<i class='bx bx-x'></i>`;
   } else {
-    middleNav.classList.add('animate__backOutRight');
+    middleNav.classList.add('animate__fadeOutRight');
     middleNav.addEventListener('animationend', () => {
-      middleNav.classList.remove('middle-nav-open', 'animate__backInLeft', 'animate__backOutRight');
+      middleNav.classList.remove('middle-nav-open', 'animate__fadeInLeft', 'animate__fadeOutRight');
     }, { once: true });
     openMiddleNav.innerHTML = `<div></div><div></div><div></div><div></div>`;
   }
 });
+
+
 
 // THIS IS THE CODE THAT OPENS AND CLOSES THE INTERNET BANKING OFFCANVAS
 
