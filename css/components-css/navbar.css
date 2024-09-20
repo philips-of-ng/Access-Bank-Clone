@@ -411,7 +411,11 @@ header {
 /* THIS IS THE CODE FOR THE LARGE SCREEN DROPDOWNS */
 
 .activate-nav-drops {
-  display: block;
+  display: flex !important;
+}
+
+.activate-nav-drops-in {
+  display: block !important;
 }
 
 
@@ -431,6 +435,7 @@ header {
   height: 100%;
   overflow: scroll;
   background-color: green;
+  display: none;
 }
 
 .nav-drops-head {
@@ -465,15 +470,6 @@ header {
   scrollbar-color: rgb(238, 126, 1) #f1f1f1;
 }
 
-/* .nav-drops-body-left::-webkit-scrollbar-track {
-  background: green;
-  color: green;
-}
-
-.nav-drops-body-left::-webkit-scrollbar-thumb {
-  background-color: rgb(238, 126, 1) !important;
-  color: rgb(238, 126, 1) !important;
-} */
 
 .nav-drops-body-left .nav-acc-ul li .inner-link {
   text-transform: capitalize !important;
@@ -485,6 +481,17 @@ header {
   height: 100%;
   box-shadow:  -9px -9px 37px #b1b1b1,
              12px 12px 37px #ffffff;
+}
+
+.nav-drops-body-right > .ndbr-0 {
+  padding: 20px;
+}
+
+.ndbr-0 {
+  height: 100%;
+  overflow-y: scroll !important;
+  scrollbar-width: bold;
+  scrollbar-color: rgb(238, 126, 1) #f1f1f1;
 }
 
 .ndbr-1 {

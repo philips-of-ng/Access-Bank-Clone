@@ -114,9 +114,136 @@ bnmControl.addEventListener('click', () => {
 
 //Personal Banking
 
+const bpndUnderlay = document.getElementById('nav-drops-underlay')
 const pbnd = document.getElementById('personal-banking-nd')
 const pbndControl = document.getElementById('personal-banking-nd-control')
+let focusPbnd = false
+
+function closePbnd() {
+  pbnd.classList.remove('activate-nav-drops-in')
+  bpndUnderlay.classList.remove('activate-nav-drops')
+}
 
 pbndControl.addEventListener('mouseover', () => {
-  pbnd.classList
+  bpndUnderlay.classList.add('activate-nav-drops')
+  pbnd.classList.add('activate-nav-drops-in')
 })
+
+pbndControl.addEventListener('mouseleave', () => {
+  closePbnd()
+})
+
+pbnd.addEventListener('mouseover', () => {
+  pbnd.classList.add('activate-nav-drops-in')
+  bpndUnderlay.classList.add('activate-nav-drops')
+})
+
+pbnd.addEventListener('mouseleave', () => {
+  closePbnd()
+})
+
+
+//Business Banking
+
+const bbndUnderlay = document.getElementById('nav-drops-underlay-2')
+const bbnd = document.getElementById('business-banking-nd')
+const bbndControl = document.getElementById('business-banking-nd-control')
+
+function closeBbnd() {
+  bbnd.classList.remove('activate-nav-drops-in')
+  bbndUnderlay.classList.remove('activate-nav-drops')
+}
+
+bbndControl.addEventListener('mouseover', () => {
+  bbndUnderlay.classList.add('activate-nav-drops')
+  bbnd.classList.add('activate-nav-drops-in')
+})
+
+bbndControl.addEventListener('mouseleave', () => {
+  closeBbnd()
+})
+
+bbnd.addEventListener('mouseover', () => {
+  bbnd.classList.add('activate-nav-drops-in')
+  bbndUnderlay.classList.add('activate-nav-drops')
+})
+
+bbnd.addEventListener('mouseleave', () => {
+  closeBbnd()
+})
+
+
+
+
+
+
+
+//Coporate Banking
+
+
+const cbndUnderlay = document.getElementById('nav-drops-underlay-3');
+const cbnd = document.getElementById('corporate-banking-nd');
+const cbndControl = document.getElementById('corporate-banking-nd-control'); // Ensure this element exists
+
+function closeCbnd() {
+  cbnd.classList.remove('activate-nav-drops-in');
+  cbndUnderlay.classList.remove('activate-nav-drops');
+}
+
+cbndControl.addEventListener('mouseover', () => {
+  cbndUnderlay.classList.add('activate-nav-drops');
+  cbnd.classList.add('activate-nav-drops-in');
+});
+
+cbndControl.addEventListener('mouseleave', () => {
+  closeCbnd();
+});
+
+cbnd.addEventListener('mouseover', () => {
+  cbnd.classList.add('activate-nav-drops-in');
+  cbndUnderlay.classList.add('activate-nav-drops');
+});
+
+cbnd.addEventListener('mouseleave', () => {
+  closeCbnd();
+});
+
+
+// Private Banking
+
+const prbndUnderlay = document.getElementById('nav-drops-underlay-4');
+const prbnd = document.getElementById('private-banking-nd');
+const prbndControl = document.getElementById('private-banking-nd-control');
+
+function closePrbnd() {
+  prbnd.classList.remove('activate-nav-drops-in');
+  prbndUnderlay.classList.remove('activate-nav-drops');
+}
+
+prbndControl.addEventListener('mouseover', () => {
+  prbndUnderlay.classList.add('activate-nav-drops');
+  prbnd.classList.add('activate-nav-drops-in');
+});
+
+prbndControl.addEventListener('mouseleave', () => {
+  closePrbnd();
+});
+
+prbnd.addEventListener('mouseover', () => {
+  prbnd.classList.add('activate-nav-drops-in');
+  prbndUnderlay.classList.add('activate-nav-drops');
+});
+
+prbnd.addEventListener('mouseleave', () => {
+  closePrbnd();
+});
+
+
+
+
+
+
+
+
+
+
