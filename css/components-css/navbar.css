@@ -443,12 +443,87 @@ header {
 .nav-drops-body {
   width: 100%;
   height: 80%;
-  background-color: grey;
+  background-color: white;
 }
+
+.nav-drops-body-left {
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+  padding: 15px;
+  
+
+
+  scrollbar-width: bold;
+  scrollbar-color: rgb(238, 126, 1) #f1f1f1;
+}
+
+/* .nav-drops-body-left::-webkit-scrollbar-track {
+  background: green;
+  color: green;
+}
+
+.nav-drops-body-left::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 126, 1) !important;
+  color: rgb(238, 126, 1) !important;
+} */
+
+.nav-drops-body-left .nav-acc-ul li .inner-link {
+  text-transform: capitalize !important;
+}
+
+
+.nav-drops-body-right {
+  width: 75%;
+  height: 100%;
+  box-shadow:  -9px -9px 37px #b1b1b1,
+             12px 12px 37px #ffffff;
+}
+
+.ndbr-1 {
+  padding: 20px;
+}
+.ndbr-1 h1 {
+  font-size: 32px;
+  font-weight: 200;
+  color: rgb(238, 126, 1);
+}
+
+.ndbr-2 {
+  padding: 20px;
+}
+
+.ndbr-2 img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 8px;
+}
+
+.ndbr-2 a {
+  color: white;
+  background-color: rgb(238, 126, 1);
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.ndbr-2 a:hover {
+  background-color: rgb(209, 118, 14);
+  margin-top: -3px;
+  transition: 0.2s;
+}
+
+
+
+
+
+
 
 .nav-drops-footer {
   width: 100%;
-  padding: 0 15px;
+  padding: 10px 15px;
   background-color: #f1f1f1;
 }
 
