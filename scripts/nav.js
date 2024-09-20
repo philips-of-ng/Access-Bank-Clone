@@ -110,8 +110,3 @@ bnmControl.addEventListener('click', () => {
   }
 })
 
-
-
-
-
-
