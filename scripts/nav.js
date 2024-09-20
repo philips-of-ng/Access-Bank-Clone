@@ -110,3 +110,13 @@ bnmControl.addEventListener('click', () => {
   }
 })
 
+//THIS IS THE CODE FOR THE MAJOR DROPDOWNS ON LAPTOP SCREEN
+
+//Personal Banking
+
+const pbnd = document.getElementById('personal-banking-nd')
+const pbndControl = document.getElementById('personal-banking-nd-control')
+
+pbndControl.addEventListener('mouseover', () => {
+  pbnd.classList
+})
