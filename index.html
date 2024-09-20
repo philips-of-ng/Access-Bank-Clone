@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/components-css/navbar.css">
+  <link rel="stylesheet" href="./css/components-css/footer.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Access Bank Plc</title>
+</head>
+<body>
+
+  <header>
+
+    <!-- THIS IS THE CODE FOR INTERNET BANKING MENU DIV -->
+    <!-- DESKTOP VIEW -->
+    <div class="internet-banking-dsv animate__animated" id="internet-banking-dsv">
+      <div class="ib-dsv-head">
+        <h4 class="text-center">Internet Banking</h4>
+      </div>
+
+      <div class="ib-dsv-body">
+        <button class="individual">
+          <div class="d-flex justify-content-between align-items-center">
+            <i class='bx bx-user'></i>
+            <p>Individual</p>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <i class='bx bx-right-top-arrow-circle'></i>
+          </div>
+        </button>
+
+        <button class="business">
+          <div class="d-flex justify-content-between align-items-center">
+            <i class='bx bx-user'></i>
+            <p>Business</p>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <i class='bx bx-right-top-arrow-circle'></i>
+          </div>
+        </button>
+
+        <div class="advert1">
+          <img src="../images/advert.png" alt="">
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <!-- THIS IS THE THE TOP NAV CODE -->
+    <div class="top-nav d-flex justify-content-between align-items-center">
+      <button class="tn-menu" id="middle-nav-open">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      
+      <div class="top-nav-left d-flex">
+        <a class="tn-link" href="#">About Us</a>
+        <a class="tn-link" href="#">Sustainable Banking</a>
+        <a class="tn-link" href="#">Investor Relations</a>
+        <a class="tn-link" href="#">Media</a>
+        <a class="tn-link" href="#">Careers</a>
+        <a class="tn-link" href="#">Branch & ATM Locator</a>
+        <a style="font-weight: bold; color: rgb(238,126,1);" class="tn-link" href="#">Help</a>
+      </div>
+
+      <div class="top-nav-right d-flex justify-content-between align-items-center">
+        <p>Coutry Selector</p>
+        <img src="../images/nigeria.svg" alt="">
+        <i class='bx bx-caret-down'></i>
+      </div>
+    </div>
+
+    <!-- THIS IS THE CODE FOR THE MIDDLE NAV THAT ONLY SHOW ON MOBILE WHEN THE MENU ICON IS CLICKED -->
+    <div class="middle-nav animate__animated" id="middle-nav">
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Sustainable Banking</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Branch & ATM Locator</a></li>
+        <li><a class="orange-link" href="#">HELP</a></li>
+      </ul>
+    </div>
+
+
+    <!-- THIS IS THE CODE FOR THE BOTTOM NAV -->
+    <div class="bottom-nav d-flex justify-content-between align-items-center">
+
+      <div class="bn-logo-div mx-3">
+        <a href="#"><img src="../images/access-logo-2.png" alt=""></a>
+      </div>
+
+      <div class="bn-nav-div d-flex align-items-center">
+        <a class="bn-link" href="#">Home</a>
+        <a class="bn-link" id="personal-banking-nd-control" href="#">Personal</a>
+        <a class="bn-link" id="business-banking-nd-control" href="#">Business</a>
+        <a class="bn-link" id="corporate-banking-nd-control" href="#">Coporate</a>
+        <a class="bn-link" id="private-banking-nd-control" href="#">Private</a>
+        <a class="bn-link" id="ways-to-bank" href="#">Ways to Bank</a>
+        <a class="bn-link" id="contact-us" href="#">Contact Us</a>
+        <a class="bn-link" href="#">I am...</a>
+      </div>
+
+      <div class="bn-search-div d-flex align-items-center justify-content-between">
+        <p>Search...</p>
+        <i class='bx bx-search'></i>
+      </div>
+
+      <button class="bn-online-banking d-flex align-items-center justify-content-between" id="internet-banking-dsv-control">
+        <i class='bx bx-lock-alt' ></i>
+        <p>Online Banking</p>
+      </button>
+
+      <div class="bn-mobile-nav-div d-flex align-items-center justify-content-between">
+        <button class="bn-mobile-online-banking" id="internet-banking-mbv-control">
+          <i id="x-or-lock" class='bx bx-lock-alt' ></i><p>Online Banking</p>
+        </button>
+
+        <button class="mobile-search-btn"><i class='bx bx-search'></i></button>
+
+        <button class="bn-mobile-menu-btn" id="bottom-nav-mbv-control"><i id="bnm-icon" class='bx bx-menu' ></i></button>
+      </div>
+    </div>
+
+    <!-- THIS IS THE CODE FOR THE INTERNET BANKING DROPDOWN THAT ONLY WORKS ON MOBILE WHEN YOU CLICK THE INTERNET BANKING BUTTON -->
+
+    <div class="internet-banking-mbv animate__animated" id="internet-banking-mbv">
+      <div class="ib-dsv-head">
+        <h4 class="text-center">Internet Banking</h4>
+      </div>
+
+      <div class="ib-dsv-body">
+        <button class="individual">
+          <div class="d-flex justify-content-between align-items-center">
+            <i class='bx bx-user'></i>
+            <p>Individual</p>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <i class='bx bx-right-top-arrow-circle'></i>
+          </div>
+        </button>
+
+        <button class="business">
+          <div class="d-flex justify-content-between align-items-center">
+            <i class='bx bx-user'></i>
+            <p>Business</p>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <i class='bx bx-right-top-arrow-circle'></i>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- THIS IS THE CODE FOR THE NAVBAR DROPDOWN CAROUSEL THAT ONLY WORKS ON MOBILE WHEN YOU CLICK THE MENU BUTTON -->
+
+    <div class="bottom-nav-mbv animate__animated" id="bottom-nav-mbv">
+
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <!-- Accordion Item #1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              PERSONAL
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="nav-acc-ul">
+                <li><a href="" class="inner-link">AGENCY BANKING</a></li>
+                <li><a href="" class="inner-link">BACK TO SCHOOL</a></li>
+                <li><a href="" class="inner-link">BANCASSURANCE</a></li>
+                <li><a href="" class="inner-link">BORROWING</a></li>
+                <li><a href="" class="inner-link">DIASPORA BANKING</a></li>
+                <li><a href="" class="inner-link">EVERYDAY ACCOUNTS</a></li>
+                <li><a href="" class="inner-link">KIDS & TEENS</a></li>
+                <li><a href="" class="inner-link">MONEY TRANSFER</a></li>
+                <li><a href="" class="inner-link">PROMOS & PROPOSITIONS</a></li>
+                <li><a href="" class="inner-link">SAVING & INVESTING</a></li>
+                <li><a href="" class="inner-link">THE "W" INITIATIVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Accordion Item #2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              BUSINESS
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="nav-acc-ul">
+                <li><a href="" class="inner-link">AGENCY BANKING</a></li>
+                <li><a href="" class="inner-link">BACK TO SCHOOL</a></li>
+                <li><a href="" class="inner-link">BANCASSURANCE</a></li>
+                <li><a href="" class="inner-link">BORROWING</a></li>
+                <li><a href="" class="inner-link">DIASPORA BANKING</a></li>
+                <li><a href="" class="inner-link">EVERYDAY ACCOUNTS</a></li>
+                <li><a href="" class="inner-link">KIDS & TEENS</a></li>
+                <li><a href="" class="inner-link">MONEY TRANSFER</a></li>
+                <li><a href="" class="inner-link">PROMOS & PROPOSITIONS</a></li>
+                <li><a href="" class="inner-link">SAVING & INVESTING</a></li>
+                <li><a href="" class="inner-link">THE "W" INITIATIVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Accordion Item #3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              CORPERATE
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="nav-acc-ul">
+                <li><a href="" class="inner-link">AGENCY BANKING</a></li>
+                <li><a href="" class="inner-link">BACK TO SCHOOL</a></li>
+                <li><a href="" class="inner-link">BANCASSURANCE</a></li>
+                <li><a href="" class="inner-link">BORROWING</a></li>
+                <li><a href="" class="inner-link">DIASPORA BANKING</a></li>
+                <li><a href="" class="inner-link">EVERYDAY ACCOUNTS</a></li>
+                <li><a href="" class="inner-link">KIDS & TEENS</a></li>
+                <li><a href="" class="inner-link">MONEY TRANSFER</a></li>
+                <li><a href="" class="inner-link">PROMOS & PROPOSITIONS</a></li>
+                <li><a href="" class="inner-link">SAVING & INVESTING</a></li>
+                <li><a href="" class="inner-link">THE "W" INITIATIVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Accordion Item #4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              PRIVATE
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="nav-acc-ul">
+                <li><a href="" class="inner-link">AGENCY BANKING</a></li>
+                <li><a href="" class="inner-link">BACK TO SCHOOL</a></li>
+                <li><a href="" class="inner-link">BANCASSURANCE</a></li>
+                <li><a href="" class="inner-link">BORROWING</a></li>
+                <li><a href="" class="inner-link">DIASPORA BANKING</a></li>
+                <li><a href="" class="inner-link">EVERYDAY ACCOUNTS</a></li>
+                <li><a href="" class="inner-link">KIDS & TEENS</a></li>
+                <li><a href="" class="inner-link">MONEY TRANSFER</a></li>
+                <li><a href="" class="inner-link">PROMOS & PROPOSITIONS</a></li>
+                <li><a href="" class="inner-link">SAVING & INVESTING</a></li>
+                <li><a href="" class="inner-link">THE "W" INITIATIVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Accordion Item #5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              WAYS TO BANK
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="nav-acc-ul">
+                <li><a href="" class="inner-link">AGENCY BANKING</a></li>
+                <li><a href="" class="inner-link">BACK TO SCHOOL</a></li>
+                <li><a href="" class="inner-link">BANCASSURANCE</a></li>
+                <li><a href="" class="inner-link">BORROWING</a></li>
+                <li><a href="" class="inner-link">DIASPORA BANKING</a></li>
+                <li><a href="" class="inner-link">EVERYDAY ACCOUNTS</a></li>
+                <li><a href="" class="inner-link">KIDS & TEENS</a></li>
+                <li><a href="" class="inner-link">MONEY TRANSFER</a></li>
+                <li><a href="" class="inner-link">PROMOS & PROPOSITIONS</a></li>
+                <li><a href="" class="inner-link">SAVING & INVESTING</a></li>
+                <li><a href="" class="inner-link">THE "W" INITIATIVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Accordion Item #6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              CONTACT US
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="nav-acc-ul">
+                <li><a href="" class="inner-link">AGENCY BANKING</a></li>
+                <li><a href="" class="inner-link">BACK TO SCHOOL</a></li>
+                <li><a href="" class="inner-link">BANCASSURANCE</a></li>
+                <li><a href="" class="inner-link">BORROWING</a></li>
+                <li><a href="" class="inner-link">DIASPORA BANKING</a></li>
+                <li><a href="" class="inner-link">EVERYDAY ACCOUNTS</a></li>
+                <li><a href="" class="inner-link">KIDS & TEENS</a></li>
+                <li><a href="" class="inner-link">MONEY TRANSFER</a></li>
+                <li><a href="" class="inner-link">PROMOS & PROPOSITIONS</a></li>
+                <li><a href="" class="inner-link">SAVING & INVESTING</a></li>
+                <li><a href="" class="inner-link">THE "W" INITIATIVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Accordion Item #7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              I AM...
+            </button>
+          </h2>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="nav-acc-ul">
+                <li><a href="" class="inner-link">AGENCY BANKING</a></li>
+                <li><a href="" class="inner-link">BACK TO SCHOOL</a></li>
+                <li><a href="" class="inner-link">BANCASSURANCE</a></li>
+                <li><a href="" class="inner-link">BORROWING</a></li>
+                <li><a href="" class="inner-link">DIASPORA BANKING</a></li>
+                <li><a href="" class="inner-link">EVERYDAY ACCOUNTS</a></li>
+                <li><a href="" class="inner-link">KIDS & TEENS</a></li>
+                <li><a href="" class="inner-link">MONEY TRANSFER</a></li>
+                <li><a href="" class="inner-link">PROMOS & PROPOSITIONS</a></li>
+                <li><a href="" class="inner-link">SAVING & INVESTING</a></li>
+                <li><a href="" class="inner-link">THE "W" INITIATIVE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- THIS IS THE CODE FOR THE MAJOR DROPDOWNS -->
+
+
+    <div class="nav-drops-underlay" id="nav-drops-underlay">
+      <div class="nav-drops" id="personal-banking-nd">
+        <div class="nav-drops-head d-flex align-items-center">
+          <h1>PERSONAL BANKING</h1>
+        </div>
+
+        <div class="nav-drops-body d-flex justify-content-between align-items-center">
+
+          <div class="nav-drops-body-left">
+            <ul class="nav-acc-ul">
+              <li><a href="" class="inner-link">Agency Banking</a></li>
+              <li><a href="" class="inner-link">Back to School</a></li>
+              <li><a href="" class="inner-link">Bancassurance</a></li>
+              <li><a href="" class="inner-link">Borrowing</a></li>
+              <li><a href="" class="inner-link">Diaspora Banking</a></li>
+              <li><a href="" class="inner-link">Everyday Accounts</a></li>
+              <li><a href="" class="inner-link">Kids & Teens</a></li>
+              <li><a href="" class="inner-link">Money Transfer</a></li>
+              <li><a href="" class="inner-link">Promos & Propositions</a></li>
+              <li><a href="" class="inner-link">Saving & Investing</a></li>
+              <li><a href="" class="inner-link">The "W" Initiative</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-drops-body-right row">
+
+            <div class="col"></div>
+
+            <div class="ndbr-1 col">
+              <h1>Agency Banking</h1>
+
+              <p>Agency banking is bankng that's CLOSA to you</p>
+            </div>
+
+            <div class="ndbr-2 col">
+              <img src="../images/agency-banking.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, ullam. Repudiandae praesentium delectus minima quae pariatur?</p>
+              <a href="#">access more</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="nav-drops-footer d-flex justify-content-between align-items-center">
+          <div>
+            <a href="#"><i class='bx bx-phone'></i> Contact Us</a>
+            <a href="#"><i class='bx bx-color'></i> Help & Support</a>
+            <a href="#"><i class='bx bx-map-alt' ></i> Locate Us</a>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <svg width="19" height="50" viewBox="0 0 19 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4054 0H19L3.59459 52H0L15.4054 0Z" fill="#F98537"></path></svg>
+          <p>More than banking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    
+    <div class="nav-drops-underlay" id="nav-drops-underlay-2">
+      <div class="nav-drops" id="business-banking-nd">
+        <div class="nav-drops-head d-flex align-items-center">
+          <h1>BUSINESS BANKING</h1>
+        </div>
+
+        <div class="nav-drops-body d-flex justify-content-between align-items-center">
+
+          <div class="nav-drops-body-left">
+            <ul class="nav-acc-ul">
+              <li><a href="" class="inner-link">Business Accounts</a></li>
+              <li><a href="" class="inner-link">CBN Healthcare Sector Loan</a></li>
+              <li><a href="" class="inner-link">E-solutions and Services</a></li>
+              <li><a href="" class="inner-link">Emerging Businesses</a></li>
+              <li><a href="" class="inner-link">FX Products</a></li>
+              <li><a href="" class="inner-link">FX Self Service Portal</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-drops-body-right row">
+
+            <div class="ndbr-0 col">
+              <a href="" class="inner-link">Corporate Account</a>
+              <a href="" class="inner-link">Domicilliary Account</a>
+            </div>
+
+            <div class="ndbr-1 col">
+              <h1>Business Accounts</h1>
+
+              <p>Agency banking is bankng that's CLOSA to you</p>
+            </div>
+
+            <div class="ndbr-2 col">
+              <img src="../images/business-accounts.png" alt="">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, ullam. Repudiandae praesentium delectus minima quae pariatur?</p>
+              <a href="#">access more</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="nav-drops-footer d-flex justify-content-between align-items-center">
+          <div>
+            <a href="#"><i class='bx bx-phone'></i> Contact Us</a>
+            <a href="#"><i class='bx bx-color'></i> Help & Support</a>
+            <a href="#"><i class='bx bx-map-alt' ></i> Locate Us</a>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <svg width="19" height="50" viewBox="0 0 19 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4054 0H19L3.59459 52H0L15.4054 0Z" fill="#F98537"></path></svg>
+          <p>More than banking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    <div class="nav-drops-underlay" id="nav-drops-underlay-3">
+      <div class="nav-drops" id="corporate-banking-nd">
+        <div class="nav-drops-head d-flex align-items-center">
+          <h1>CORPORATE BANKING</h1>
+        </div>
+
+        <div class="nav-drops-body d-flex justify-content-between align-items-center">
+
+          <div class="nav-drops-body-left">
+            <ul class="nav-acc-ul">
+              <li><a href="" class="inner-link">Corporate Sector</a></li>
+              <li><a href="" class="inner-link">Distibutors Forum</a></li>
+              <li><a href="" class="inner-link">Economic Research</a></li>
+              <li><a href="" class="inner-link">Exporters Forum</a></li>
+              <li><a href="" class="inner-link">Loans</a></li>
+              <li><a href="" class="inner-link">Products & Service</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-drops-body-right row">
+
+            <div class="ndbr-0 col">
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+            </div>
+
+            <div class="ndbr-1 col">
+              <h1>Corporate Sector</h1>
+
+              <p>We have the specialised knowledge and expertise to help you navigate the financial complexity of your industry.</p>
+            </div>
+
+            <div class="ndbr-2 col">
+              
+              <p>Lorem ipsum dolor, sit amet consectetur praesentium delectus minima quae pariatur?</p>
+              <a href="#">access more</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="nav-drops-footer d-flex justify-content-between align-items-center">
+          <div>
+            <a href="#"><i class='bx bx-phone'></i> Contact Us</a>
+            <a href="#"><i class='bx bx-color'></i> Help & Support</a>
+            <a href="#"><i class='bx bx-map-alt' ></i> Locate Us</a>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <svg width="19" height="50" viewBox="0 0 19 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4054 0H19L3.59459 52H0L15.4054 0Z" fill="#F98537"></path></svg>
+          <p>More than banking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="nav-drops-underlay" id="nav-drops-underlay-4">
+      <div class="nav-drops" id="private-banking-nd">
+        <div class="nav-drops-head d-flex align-items-center">
+          <h1>PRIVATE BANKING</h1>
+        </div>
+
+        <div class="nav-drops-body d-flex justify-content-between align-items-center">
+
+          <div class="nav-drops-body-left">
+            <ul class="nav-acc-ul">
+              <li><a href="" class="inner-link">About the Access Private Bank</a></li>
+              <li><a href="" class="inner-link">Access Medicair</a></li>
+              <li><a href="" class="inner-link">American Express (AMEX) Card</a></li>
+              <li><a href="" class="inner-link">Black Card</a></li>
+              <li><a href="" class="inner-link">Exclusive Private Banker</a></li>
+              <li><a href="" class="inner-link">Investment Management</a></li>
+              <li><a href="" class="inner-link">Our Products & Service</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-drops-body-right row">
+
+            <div class="ndbr-0 col">
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+              <a href="" class="inner-link">Airline Payments</a>
+              <a href="" class="inner-link">Asian Coporates</a>
+            </div>
+
+            <div class="ndbr-1 col">
+              <h1>About the Private Bank</h1>
+
+              <p>We help you identify the right financial strategy, and provide you with the services and products you require today and in the future.</p>
+            </div>
+
+            <div class="ndbr-2 col">
+              <img src="../images/private-bank.png" alt="">
+              <p>Introducing the Access Bank American Express® Platinum Card and the American Express® Gold Card.</p>
+              <a href="#">access more</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="nav-drops-footer d-flex justify-content-between align-items-center">
+          <div>
+            <a href="#"><i class='bx bx-phone'></i> Contact Us</a>
+            <a href="#"><i class='bx bx-color'></i> Help & Support</a>
+            <a href="#"><i class='bx bx-map-alt' ></i> Locate Us</a>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <svg width="19" height="50" viewBox="0 0 19 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4054 0H19L3.59459 52H0L15.4054 0Z" fill="#F98537"></path></svg>
+          <p>More than banking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+
+  <!-- END OF THE NAVIGATION BAR -->
+  <!-- END OF THE NAVIGATION BAR -->
+  <!-- END OF THE NAVIGATION BAR -->
+
+
+  <section class="section-one">
+
+    <div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <!-- First item -->
+          <div class="carousel-item active d-flex align-items-center p-5">
+            <div class="car-content col-6">
+              <h1>AMERICAN EXPRESS IS HERE.</h1>
+              <h5>Uncover more rewarding ways to spend quality time.</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis incidunt molestiae, perferendis aperiam neque nobis, labore quisquam aliquid reiciendis error nemo velit. Minus dolor cumque itaque deleniti molestiae enim est.</p>
+
+              <button class="access-more-blue">access more</button>
+              
+            </div>
+          </div>
+          
+          <!-- Second item -->
+          <div class="carousel-item">
+            
+          </div>
+          
+          <!-- Third item -->
+          <div class="carousel-item">
+            
+          </div>
+          
+          <!-- Fourth item -->
+          <div class="carousel-item">
+            
+          </div>
+          
+          <!-- Fifth item -->
+          <div class="carousel-item">
+            
+          </div>
+          
+          <!-- Sixth item -->
+          <div class="carousel-item">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- START OF THE FOOTER  -->
+  <!-- START OF THE FOOTER  -->
+  <!-- START OF THE FOOTER  -->
+  <footer>
+    <div class="main-footer">
+      <div class="container-fluid">
+
+        <div class="desktop-view">
+
+          <div class="dv-main d-flex justify-content-between">
+            <div>
+              <h2 class="footer-title">ABOUT US</h2>
+              <ul>
+                <li><a class="f-link" href="">Our History</a></li>
+                <li><a class="f-link" href="">Coporate Profile</a></li>
+                <li><a class="f-link" href="">Corporate Gorvernance</a></li>
+                <li><a class="f-link" href="">Board and Management Team</a></li>
+                <li><a class="f-link" href="">Corporate Philosophy</a></li>
+                <li><a class="f-link" href="">Our Awards</a></li>
+                <li><a class="f-link" href="">Our Businesses</a></li>
+              </ul>
+            </div>
+  
+  
+            <div>
+              <h2 class="footer-title">CAREERS</h2>
+              <ul>
+                <li><a class="f-link" href="">Working at Access Bank</a></li>
+                <li><a class="f-link" href="">Recruitment Process</a></li>
+                <li><a class="f-link" href="">Your Career</a></li>
+              </ul>
+            </div>
+  
+  
+            
+            <div>
+              <h2 class="footer-title">CONTACT US</h2>
+              <ul>
+                <li><a class="f-link" href="">Agent Banking Details</a></li>
+                <li><a class="f-link" href="">Biometrics Enrollment</a></li>
+                <li><a class="f-link" href="">Branch and ATM Locator</a></li>
+                <li><a class="f-link" href="">Branches With Wifi</a></li>
+                <li><a class="f-link" href="">My Access</a></li>
+                <li><a class="f-link" href="">We Care</a></li>
+              </ul>
+            </div>
+  
+  
+            
+            <div>
+              <h2 class="footer-title">QUICK LINKS</h2>
+              <ul>
+                <li><a class="f-link" href="">Access Online</a></li>
+                <li><a class="f-link" href="">Anti-Money Laundering</a></li>
+                <li><a class="f-link" href="">Download Center</a></li>
+                <li><a class="f-link" href="">Form M Rates</a></li>
+                <li><a class="f-link" href="">IMS Policy</a></li>
+                <li><a class="f-link" href="">Online Security Tips</a></li>
+                <li><a class="f-link" href="">Scam Alert</a></li>
+                <li><a class="f-link" href="">Help</a></li>
+              </ul>
+            </div>
+  
+  
+            
+            <div>
+              <h2 class="footer-title">YOU ARE...</h2>
+              <ul>
+                <li><a class="f-link" href="">An Individual</a></li>
+                <li><a class="f-link" href="">A Job Applicant</a></li>
+                <li><a class="f-link" href="">A Woman</a></li>
+                <li><a class="f-link" href="">A Company</a></li>
+                <li><a class="f-link" href="">A Journalist</a></li>
+                <li><a class="f-link" href="">A Teenager</a></li>
+                <li><a class="f-link" href="">An Entrepreneur</a></li>
+                <li><a class="f-link" href="">An Investor</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dv-sec d-flex justify-content-between">
+            <div class="dv-sec-contact d-flex justify-content-between align-items-center">
+              <p><i class='bx bx-phone'></i></p>
+              <a href="tel:0201 280 2500">0201 280 2500,</a>
+              <a href="tel:07003000000">07003000000</a>
+            </div>
+
+            <div class="dv-sec-app d-flex align-items-center justify-content-between">
+              <p class="f-link">Access Mobile Apps</p>
+              <a href="#"><img src="../images/get-it-on-appstore.png" alt=""></a>
+              <a href="#"><img src="../images/get-it-on-playstore.png" alt=""></a>
+            </div>
+
+            <div class="dv-sec-socials d-flex justify-content-between align-items-center">
+              <p style="margin: 0;" class="f-link">We are Social:</p>
+
+              <a href="#"><i class='bx bxl-twitter' ></i></a>
+
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+
+              <a href="#"><i class='bx bxl-facebook-square'></i></a>
+
+              <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- THIS IS THE CODE FOR THE MOBILE VIEW FOOTER -->
+        <div class="mobile-view">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span class="footer-title">ABOUT US</span>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a class="f-link" href="">Our History</a></li>
+                    <li><a class="f-link" href="">Coporate Profile</a></li>
+                    <li><a class="f-link" href="">Corporate Gorvernance</a></li>
+                    <li><a class="f-link" href="">Board and Management Team</a></li>
+                    <li><a class="f-link" href="">Corporate Philosophy</a></li>
+                    <li><a class="f-link" href="">Our Awards</a></li>
+                    <li><a class="f-link" href="">Our Businesses</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span class="footer-title">CAREER</span>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a class="f-link" href="">Working at Access Bank</a></li>
+                    <li><a class="f-link" href="">Recruitment Process</a></li>
+                    <li><a class="f-link" href="">Your Career</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <span class="footer-title">CONTACT US</span>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a class="f-link" href="">Agent Banking Details</a></li>
+                    <li><a class="f-link" href="">Biometrics Enrollment</a></li>
+                    <li><a class="f-link" href="">Branch and ATM Locator</a></li>
+                    <li><a class="f-link" href="">Branches With Wifi</a></li>
+                    <li><a class="f-link" href="">My Access</a></li>
+                    <li><a class="f-link" href="">We Care</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <span class="footer-title">QUICK LINKS</span>
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a class="f-link" href="">Access Online</a></li>
+                    <li><a class="f-link" href="">Anti-Money Laundering</a></li>
+                    <li><a class="f-link" href="">Download Center</a></li>
+                    <li><a class="f-link" href="">Form M Rates</a></li>
+                    <li><a class="f-link" href="">IMS Policy</a></li>
+                    <li><a class="f-link" href="">Online Security Tips</a></li>
+                    <li><a class="f-link" href="">Scam Alert</a></li>
+                    <li><a class="f-link" href="">Help</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  <span class="footer-title">YOU ARE...</span>
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a class="f-link" href="">An Individual</a></li>
+                    <li><a class="f-link" href="">A Job Applicant</a></li>
+                    <li><a class="f-link" href="">A Woman</a></li>
+                    <li><a class="f-link" href="">A Company</a></li>
+                    <li><a class="f-link" href="">A Journalist</a></li>
+                    <li><a class="f-link" href="">A Teenager</a></li>
+                    <li><a class="f-link" href="">An Entrepreneur</a></li>
+                    <li><a class="f-link" href="">An Investor</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+          <div class="dv-sec">
+            <div class="my-4 dv-sec-contact d-flex justify-content-center align-items-center">
+              <p><i class='bx bx-phone'></i></p>
+              <a href="tel:0201 280 2500">0201 280 2500,</a>
+              <a href="tel:07003000000">07003000000</a>
+            </div>
+
+            <div class="my-4 dv-sec-app d-flex align-items-center justify-content-center">
+              <p class="f-link">Access Mobile Apps</p>
+              <a href="#"><img src="../images/get-it-on-appstore.png" alt=""></a>
+              <a href="#"><img src="../images/get-it-on-playstore.png" alt=""></a>
+            </div>
+
+            <div class="my-4 dv-sec-socials d-flex justify-content-center align-items-center">
+              <p style="margin: 0;" class="f-link">We are Social:</p>
+
+              <a href="#"><i class='bx bxl-twitter' ></i></a>
+
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+
+              <a href="#"><i class='bx bxl-facebook-square'></i></a>
+
+              <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-footer">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div><p>© 2024 Access Bank PLC. (Licensed by the Central Bank of Nigeria)</p></div>
+
+        <div class="ff-center">
+          <a href="" class="ff-link">Accessibility</a>
+          <a href="" class="ff-link">Privacy Policy</a>
+          <a href="" class="ff-link">Whistle Blower</a>
+          <a href="" class="ff-link">Term of Use</a>
+        </div>
+
+        <div class="ff-right d-flex justify-content-between align-items-center">
+          <img src="../images/access-logo.png" alt="">
+          <svg width="19" height="50" viewBox="0 0 19 52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4054 0H19L3.59459 52H0L15.4054 0Z" fill="#F98537"></path></svg>
+          <p>More than banking</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="./scripts/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
