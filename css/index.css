@@ -72,7 +72,7 @@
 
 .section-two {
   width: 100%;
-  height: 300px;
+  height: 200px;
   width: 100%;
   position: relative !important;
   background-color: #f1f1f1;
@@ -135,6 +135,94 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+.news {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(235,120,36);
+}
+
+.news .news-left {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 20%; */
+  height: 100%;
+  background-color: #f1f1f1;
+  clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
+}
+
+.news-left p {
+  color: #555555;
+  margin: 0;
+  font-weight: 600;
+}
+
+.news .news-right {
+  flex: 4 !important;
+  /* width: 80%; */
+  height: 100%;
+  background-color: rgb(254,243,235);
+  clip-path: polygon(2.5% 0%, 100% 0%, 100% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+}
+
+.news-right marquee p {
+  display: inline-block;
+  margin: 0 10px;
+  color: #555555;
+}
+
+.news-bottom-lines {
+  height: 7px;
+}
+
+.news-bottom-line div {
+  height: 100%;
+}
+
+.blue-line {
+  background-color: rgb(17,76,141);
+  flex: 5;
+}
+
+.red-line {
+  background-color: rgb(211,46,18);
+  flex: 4;
+}
+
+.green-line {
+  background-color: rgb(155,192,2);
+  flex: 3;
+}
+
+.yellow-line {
+  background-color: rgb(235,120,36);
+  flex: 2;
+}
+
+.purple-line {
+  background-color: rgb(5,122,130);
+  flex: 1;
+}
+
+/* ----------------------------- */
+
+.section-three {
+  padding: 40px 0;
+}
+
+.s3-top h2 {
+  font-weight: 1000;
+}
+
+.one-s2-card {
+  width: 150px;
+  height: 200px;
+}
+
 
 
 @media (max-width: 992px) {
