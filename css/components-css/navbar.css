@@ -12,6 +12,9 @@
 
 header {
   background-color: #f1f1f1;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 /* STYLES FOR THE TOP NAV */
@@ -135,7 +138,6 @@ header {
 .bottom-nav {
   background-color: white;
   height: 60px;
-  border: 2px solid red;
 }
 
 .bn-nav-div {
