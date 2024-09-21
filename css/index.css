@@ -92,7 +92,7 @@
 
 .one-s2-card {
   display: block;
-  width: 25%;
+  flex: 1;
   height: 100%;
   text-decoration: none;
   border: 1px solid white;

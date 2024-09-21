@@ -799,9 +799,82 @@
 
 
   <section class="section-two">
-    <!-- THIS IS THE FOUR CARDS IN TABLET VIEW -->
+
+    <!-- THIS IS THE FOUR CARDS IN MOBILE VIEW -->
 
     <div class="s2-cards">
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <!-- Item 1 -->
+          <div class="carousel-item active">
+            <div class="one-s2-card p-3">
+              <a href="">
+                <img src="./images/create-account.svg" alt="">
+                <h5>Open Account</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolorum.</p>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Item 2 -->
+          <div class="carousel-item">
+            <div class="one-s2-card p-3">
+              <a href="">
+                <img src="./images/cards.svg" alt="">
+                <h5>Cards</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolorum.</p>
+              </a>
+            </div>          
+          </div>
+      
+          <!-- Item 3 -->
+          <div class="carousel-item">
+            <div class="one-s2-card p-3">
+              <a href="">
+                <img src="./images/quick-loans.svg" alt="">
+                <h5>Quick Loans</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolorum.</p>
+              </a>
+            </div>          
+          </div>
+      
+          <!-- Item 4 -->
+          <div class="carousel-item">
+            <div class="one-s2-card p-3">
+              <a href="">
+                <img src="./images/create-account.svg" alt="">
+                <h5>Money Transfer</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolorum.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Controls (Optional) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- THIS IS THE FOUR CARDS IN TABLET VIEW -->
+
+    <div class="s2-cards d-none d-md-block d-lg-none">
 
       <div id="simpleCarousel" class="carousel slide" data-bs-ride="carousel">
   
@@ -814,13 +887,49 @@
         <!-- Carousel items -->
         <div class="carousel-inner">
           <!-- Item 1 -->
-          <div class="carousel-item active">
-            h1111111111
+          <div class="carousel-item active d-flex">
+
+            <div class="d-flex">
+              <div class="one-s2-card p-3">
+                <a href="">
+                  <img src="./images/create-account.svg" alt="">
+                  <h5>Open Account</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolorum.</p>
+                </a>
+              </div>
+  
+              <div class="one-s2-card p-3">
+                <a href="">
+                  <img src="./images/create-account.svg" alt="">
+                  <h5>Money Transfer</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolorum.</p>
+                </a>
+              </div>
+            </div>
+
           </div>
       
           <!-- Item 2 -->
           <div class="carousel-item">
-            h22222222222222222
+
+            <div class="d-flex">
+              <div class="one-s2-card p-3">
+                <a href="">
+                  <img src="./images/cards.svg" alt="">
+                  <h5>Cards</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolorum.</p>
+                </a>
+              </div>
+  
+              <div class="one-s2-card p-3">
+                <a href="">
+                  <img src="./images/quick-loans.svg" alt="">
+                  <h5>Quick Loans</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, dolorum.</p>
+                </a>
+              </div>
+            </div>
+            
           </div>
         </div>
       
@@ -832,7 +941,7 @@
     
 
     <!-- THIS IS THE FOUR CARDS IN DEKTOP VIEW -->
-    <div class="d-none s2-cards d-flex justify-content-between">
+    <div class="d-none s2-cards d-lg-flex justify-content-between">
 
       <div class="one-s2-card p-3">
         <a href="">
@@ -866,6 +975,9 @@
         </a>
       </div>
     </div>
+
+
+
 
   </section>
 
