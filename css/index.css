@@ -8,6 +8,7 @@
 
 .section-one {
   width: 100%;
+  /* padding-bottom: 30px; */
 }
 
 .access-more-blue {
@@ -25,7 +26,7 @@
 
 
 .carousel-item {
-  height: 90vh !important;
+  height: 70vh !important;
 }
 
 .carousel-item .car-bg {
@@ -218,9 +219,104 @@
   font-weight: 1000;
 }
 
-.one-s2-card {
-  width: 150px;
+.one-s3-card {
+  width: 20%;
   height: 200px;
+  background-color: green;
+  transition: 0.5s;
+  position: relative;
+
+}
+
+.one-s3-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.one-s3-card > * {
+  z-index: 3;
+  position: relative;
+}
+
+.one-s3-card:hover::before {
+  height: 100%;
+}
+
+.one-s3-card:hover a p {
+  color: white;
+}
+
+.one-s3-card a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.one-s3-card a svg  {
+  margin-bottom: 25px;
+}
+
+.one-s3-card a p {
+  color: #555555;
+  font-size: 14px;
+}
+
+.card-1:hover {
+  background: url(../images/901.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-1:hover a svg > path:nth-of-type(7) {
+  color: white !important;
+  fill: white !important;
+}
+
+
+
+.card-2:hover {
+  background: url(../images/online-banking.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-2:hover a svg > path:nth-of-type(2), .card-2:hover a svg > path:nth-of-type(1)  {
+  color: white !important;
+  fill: white !important;
+}
+
+
+.card-3:hover {
+  background: url(../images/mobile-banking.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-3:hover a svg > g path:nth-of-type(3) {
+  color: white !important;
+  fill: white !important;
+}
+
+
+.card-4:hover {
+  background: url(../images/platinum-icon-bg_1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-4:hover a svg > path:nth-of-type(3) {
+  color: white !important;
+  fill: white !important;
 }
 
 
@@ -228,11 +324,12 @@
 @media (max-width: 992px) {
 
   .carousel-item {
-    min-height: 90vh !important;
+    height: 100vh !important;
+    padding-bottom: 30px !important;
   }
 
   .carousel-item .car-bg {
-    height: 200px !important;
+    height: 50% !important;
     width: 100%;
   }
 
@@ -260,5 +357,11 @@
     margin-inline: auto !important;
   }
 
+}
+
+@media (max-width: 768px) {
+  .one-s3-card {
+    width: 40%;
+  }
 }
 
