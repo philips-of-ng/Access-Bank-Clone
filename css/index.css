@@ -342,14 +342,72 @@
   height: 100%;
   background-color: rgb(235,120,36);
   color: white;
+  align-items: center;
 }
 
 .s4-ml-text-1 {
   width: 40% !important;
+  border-right: 1.5px solid white;
+  padding: 25px 10px;
+}
+
+.left-dark-spot {
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.left-dark-spot p {
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .s4-ml-text-2 {
-  width: 30% !important;
+  width: 40% !important;
+}
+
+.s-circle-out {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-circle-in {
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+  background-color: rgb(235,120,36);
+  position: relative;
+}
+
+.s-circle-in h2 {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+}
+
+.s-circle-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(235,120,36);
+  position: absolute;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-circle-dot-in {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: white;
 }
 
 .s4-main-right {
