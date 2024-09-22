@@ -25,7 +25,7 @@
 }
 
 
-.carousel-item {
+.hero-carousel-item {
   height: 70vh !important;
 }
 
@@ -81,14 +81,12 @@
 
 .s2-cards {
   width: 90%;
-  height: 170px;
+  height: 200px;
   clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
   position: absolute;
   z-index: 5;
   left: 5%;
   top: -30px;
-
-  background-color: rebeccapurple;
 }
 
 .one-s2-card {
@@ -222,7 +220,7 @@
 .one-s3-card {
   width: 20%;
   height: 200px;
-  background-color: green;
+  background-color: ;
   transition: 0.5s;
   position: relative;
 
@@ -320,15 +318,60 @@
 }
 
 
+/* ---------------------------------- */
+
+.section-four {
+  padding: 40px 0;
+  background-color: #f1f1f1;
+}
+
+.s4-main {
+  width: 90%;
+  height: 400px;
+}
+
+.s4-main > div {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.s4-main-left {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(235,120,36);
+  color: white;
+}
+
+.s4-ml-text-1 {
+  width: 40% !important;
+}
+
+.s4-ml-text-2 {
+  width: 30% !important;
+}
+
+.s4-main-right {
+  width: 40%;
+  height: 80%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
 
 @media (max-width: 992px) {
 
-  .carousel-item {
+  .hero-carousel-item {
     height: 100vh !important;
     padding-bottom: 30px !important;
   }
 
-  .carousel-item .car-bg {
+  .hero-carousel-item .car-bg {
     height: 50% !important;
     width: 100%;
   }
