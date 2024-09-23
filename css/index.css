@@ -561,6 +561,46 @@
   transition: 0.3s;
 }
 
+/* -------------------------------------------- */
+
+.section-six {
+  padding: 40px 0;
+}
+
+.s6-container {
+  background-color: rgb(247,247,247);
+  width: 100%;
+  height: 400px;
+}
+
+.s6-text {
+  width: 40%;
+  height: 100%;
+  margin-right: -40px;
+  background-color: rgb(164,197,25);
+}
+
+.s6-text p, .s6-text h2 {
+  color: white;
+  margin: 0 !important;
+}
+
+.s6-image {
+  width: 60%;
+  height: 100%;
+  /* background: url(../images/closaadv.jpeg) !important; */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s6-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 
 
 @media (max-width: 992px) {
@@ -609,5 +649,23 @@
   .one-s3-card {
     width: 40%;
   }
+
+  .s6-container {
+    height: fit-content;
+  }
+
+  .s6-text{
+    width: 100%;
+    margin-right: 0;
+    height: fit-content;
+  }
+
+  .s6-image {
+    width: 100%;
+    margin-left: 0;
+    height: 250px;
+    background-position: center !important;
+  }
+
 }
 
