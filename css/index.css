@@ -420,6 +420,45 @@
   clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
+/* ---------- */
+
+.s4-main-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  width: 80%;
+  background-color: rgb(235,120,36);
+  margin-inline: auto;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.s4-main-top > div:nth-of-type(1) {
+  color: white;
+  border-bottom: 1.2px solid white;
+  background-color: rgb(235,120,36);
+}
+
+.s4-main-top > div:nth-of-type(2) {
+  color: white;
+  width: fit-content;
+}
+
+.s4-main-bottom {
+  height: fit-content;
+  padding: 70px 0;
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 100%);
+}
+
 
 
 @media (max-width: 992px) {
@@ -456,6 +495,10 @@
   .car-content button {
     display: block !important;
     margin-inline: auto !important;
+  }
+
+  .section-four {
+    padding-bottom: 280px;
   }
 
 }
