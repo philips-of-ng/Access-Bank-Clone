@@ -311,8 +311,8 @@ header {
 
 .individual {
   color: black !important;
-  border: 2px solid rgb(164,197,25);
-  background-color: rgb(164,197,25);
+  border: 2px solid rgb(164, 197, 25);
+  background-color: rgb(164, 197, 25);
   transition: 0.3s;
 }
 
@@ -323,14 +323,14 @@ header {
 
 .business {
   color: white;
-  background-color: rgb(0,65,133);
-  border: 2px solid rgb(0,65,133);
+  background-color: rgb(0, 65, 133);
+  border: 2px solid rgb(0, 65, 133);
   transition: 0.3s;
 }
 
 .business:hover {
   background-color: white;
-  color: rgb(0,65,133);
+  color: rgb(0, 65, 133);
   transition: 0.3s;
 }
 
@@ -373,7 +373,10 @@ header {
 }
 
 
-.accordion, .accordion-item, .accordion-header, .accordion-button {
+.accordion,
+.accordion-item,
+.accordion-header,
+.accordion-button {
   background: transparent !important;
   border: none !important;
 }
@@ -445,6 +448,7 @@ header {
   background-color: #f1f1f1;
   padding: 12px 10px;
 }
+
 .nav-drops-head h1 {
   margin: 0;
   font-weight: 400;
@@ -465,7 +469,7 @@ header {
   background-color: white;
   overflow-y: auto;
   padding: 15px;
-  
+
 
 
   scrollbar-width: bold;
@@ -481,11 +485,11 @@ header {
 .nav-drops-body-right {
   width: 75%;
   height: 100%;
-  box-shadow:  -9px -9px 37px #b1b1b1,
-             12px 12px 37px #ffffff;
+  box-shadow: -9px -9px 37px #b1b1b1,
+    12px 12px 37px #ffffff;
 }
 
-.nav-drops-body-right > .ndbr-0 {
+.nav-drops-body-right>.ndbr-0 {
   padding: 20px;
 }
 
@@ -499,6 +503,7 @@ header {
 .ndbr-1 {
   padding: 20px;
 }
+
 .ndbr-1 h1 {
   font-size: 32px;
   font-weight: 200;
