@@ -610,7 +610,7 @@
 .s7-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
 .s7-grid .one-s7-card {
@@ -625,10 +625,28 @@
 
 .s7-card-bottom {
   width: 90%;
-  height: 50%;
+  height: fit-content;
   background-color: rgb(1,64,134);
   color: white;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
 }
+
+.access-more-white {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.access-more-white:hover {
+  color: rgb(17,76,141);
+  background-color: white;
+  transition: 0.3s;
+}
+
+
 
 .s7-card-bottom .text {
   padding: 10px;
@@ -645,6 +663,67 @@
 .one-s7-card:nth-of-type(3) {
   background: url(../images/sustainable-banking.png);
 }
+
+/* -------------------------------------- */
+
+.section-eight {
+  padding: 40px 0;
+}
+
+.s8-main {
+  overflow-x: scroll;
+  gap: 20px;
+  padding: 50px 10px;
+}
+
+.one-s8-box {
+  width: 180px;
+  min-width: 180px;
+  padding: 20px 0;
+  height: 150px;
+  border: 4px solid rgb(204, 216, 230);
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.one-s8-box a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.one-s8-box:hover {
+  border-color: rgb(235,120,36);
+  background-color: rgb(235,120,36);
+  box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
+-webkit-box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
+-moz-box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
+}
+
+
+
+
+
+.one-s8-box:hover a p {
+  color: white;
+}
+
+.one-s8-box:hover a svg > path {
+  color: white;
+  fill: white;
+}
+
+
+.one-s8-box a p {
+  margin: 0;
+  color: #555555;
+}
+
+
+
 
 
 @media (max-width: 992px) {
@@ -687,6 +766,10 @@
     padding-bottom: 280px;
   }
 
+  .s7-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -709,6 +792,11 @@
     margin-left: 0;
     height: 250px;
     background-position: center !important;
+  }
+
+  .s7-grid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
   }
 
 }
