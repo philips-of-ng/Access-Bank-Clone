@@ -816,13 +816,12 @@ header {
 .section-three {
   width: 100%;
   height: fit-content;
-  background-color: green;
-  padding: 30px 0;
+  background-color: rgb(164,197,25);
+  padding: 50px 0;
 }
 
 .s3-grid {
   height: fit-content;
-  background-color: rebeccapurple;
   padding: 20px 0;
   display: grid;
   gap: 15px;
@@ -831,32 +830,33 @@ header {
 }
 
 .one-s3-card {
-  width: 280px;
+  /* width: 280px; */
   height: 320px;
   display: flex;
   justify-content: center;
   align-items: end;
   padding: 12px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   background-position: center !important;
   transition: 0.3s;
-  margin-inline: auto;
+  margin-inline: auto !important;
 }
+
 .s3-1 {
-  background: url(../images/901-banking.png);
+  background: url(../images/about-bvn.png);
 }
 
 .s3-2 {
-  background: url(../images/early-savers_1.png);
+  background: url(../images/service-1.png);
 }
 
 .s3-3 {
-  background: url(../images/901-banking.png);
+  background: url(../images/service-2.png);
 }
 
 .s3-4 {
-  background: url(../images/agency-banking.png);
+  background: url(../images/service-3.png);
 }
 
 
@@ -904,7 +904,7 @@ header {
 
 .access-more-green {
   color: rgb(164, 197, 25);
-  border: 1.5px solid rgb(164, 197, 25);
+  border: 2px solid rgb(164, 197, 25);
   background: transparent;
   padding: 10px 20px;
   transition: 0.3s;
@@ -916,9 +916,187 @@ header {
   transition: 0.3s;
 }
 
+.access-more-deep-green {
+  padding: 10px 15px;
+  background-color: rgb(164, 197, 25);
+  color: white;
+  border: 1.5px solid rgb(164, 197, 25);
+  transition: 0.2s;
+}
 
+.access-more-deep-green:hover {
+  background-color: transparent;
+  color: rgb(164, 197, 25);
+  transition: 0.2s;
+}
 
 /* --------------------------------- */
+
+
+.section-four {
+  width: 100%;
+  height: fit-content;
+  background-color: #f1f1f1;
+  padding-top: 40px;
+  padding-inline: 12px;
+}
+
+.s4-text h1 {
+ font-size: 40px;
+ font-weight: 100;
+}
+
+.s4-text h1 span {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.s4-text p {
+  font-size: 18px;
+  color: #555555;
+}
+
+
+
+
+.scale-top {
+  background: linear-gradient(to bottom, rgb(238, 126, 1) 0%, rgb(245, 170, 85) 50%, #f1f1f1 100%);
+  width: 100%;
+  height: fit-content;
+}
+
+.calc-div {
+  background-color: white;
+}
+
+.slider-value {
+  background-color: rgb(235,120,36);
+  padding: 8px;
+  border-radius: 3px;
+  color: white;
+}
+
+.slider {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(245, 170, 85);
+  border-radius: 2px;
+  margin: 25px 0;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.slider-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+  border: 4px solid rgb(245, 170, 85);
+  position: absolute;
+  top: -8px;
+}
+
+.scale-bottom {
+
+}
+
+.scale-bottom h1 {
+  color: rgb(235,120,36);
+}
+
+
+/* ------------------------------------- */
+
+.section-five {
+  padding: 40px;
+  background: url(../images/sme-personal-img.png);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sme-card {
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  margin: 100px !important;
+}
+
+.sme-card .slant {
+  clip-path: polygon(80% 0, 100% 0, 0 100%, 0 80%);
+  background-color: rgb(235,120,36);
+  height: 50px;
+  width: 50px;
+}
+
+.sme-content {
+
+}
+
+.sme-content h5 {
+  color: rgb(164, 197, 25);
+}
+
+.access-more-orange {
+  background-color: rgb(235,120,36);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid rgb(235,120,36);
+  transition: 0.2s;
+}
+
+.access-more-orange:hover {
+  color: rgb(235,120,36);
+  background: transparent;
+  transition: 0.2s;
+}
+
+
+/* ------------------------------- */
+
+.section-six {
+  width: 100%;
+  max-width: 1125px;
+}
+
+/* --------------------------------- */
+
+.section-seven {
+  padding: 40px !important;
+  background: url(../images/sme-personal-img.png);
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.big-card {
+  height: fit-content;
+  background-color: rgb(133,9,27);
+  color: white;
+  margin-inline: 100px !important;
+  margin-block: 50px;
+}
+
+.access-more-trans-white {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+.access-more-trans-white:hover {
+  color: rgb(133,9,27);
+  background-color: white;
+  transition: 0.2s;
+}
+
+.sme-content img {
+  width: 100px;
+}
 
 
 @media (max-width: 992px) {
@@ -954,5 +1132,32 @@ header {
   .car-content button {
     display: block !important;
     margin-inline: auto !important;
+  }
+
+  .s3-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .sme-card {
+    margin: 50px !important;
+  }
+
+  .big-card {
+    margin: 50px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .s3-grid {
+    grid-template-columns: 1fr !important;
+    margin-inline: auto;
+  }
+
+  .sme-card {
+    margin: 0 !important;
+  }
+
+  .big-card {
+    margin: 0 !important;
   }
 }

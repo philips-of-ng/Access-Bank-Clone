@@ -621,6 +621,7 @@
   flex-direction: column;
   justify-content: end;
   transition: 0.3s;
+  position: relative;
 }
 
 .s7-card-bottom {
@@ -628,8 +629,9 @@
   height: fit-content;
   background-color: rgb(1,64,134);
   color: white;
-  position: relative;
+  position: absolute;
   clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+  bottom: -20px;
 }
 
 .access-more-white {
