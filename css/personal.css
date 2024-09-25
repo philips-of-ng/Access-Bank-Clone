@@ -841,6 +841,7 @@ header {
   background-position: center !important;
   transition: 0.3s;
   margin-inline: auto !important;
+  cursor: pointer;
 }
 
 .s3-1 {
@@ -1242,7 +1243,6 @@ header {
 
 
 
-
 @media (max-width: 992px) {
   .hero-carousel-item {
     height: 100vh !important;
@@ -1305,3 +1305,6 @@ header {
     margin: 0 !important;
   }
 }
+
+
+
