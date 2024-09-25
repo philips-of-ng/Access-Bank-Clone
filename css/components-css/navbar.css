@@ -168,7 +168,7 @@ header {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 4px;
   width: 0;
   height: 4px;
   background-color: rgb(238, 126, 1);

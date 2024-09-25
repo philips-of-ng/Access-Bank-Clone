@@ -609,6 +609,8 @@ header {
 
 /* -------------------------------- */
 
+
+
 .section-one {
   width: 100%;
 }
@@ -698,7 +700,7 @@ header {
   flex: 1;
   height: 100%;
   text-decoration: none;
-  border: 1px solid black;
+  border-right: 1px solid black;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -710,7 +712,7 @@ header {
   bottom: 0;
   width: 0;
   height: 5px;
-  background-color: white;
+  background-color: rgb(164, 197, 25);
   transition: width 0.4s ease;
   cursor: pointer;
 }
@@ -738,6 +740,9 @@ header {
   font-size: 14px;
   font-weight: 400;
 }
+
+
+/* ------------------------ */
 
 .news {
   width: 100%;
