@@ -1078,6 +1078,7 @@ header {
   color: white;
   margin-inline: 100px !important;
   margin-block: 50px;
+  padding-top: 30px;
 }
 
 .access-more-trans-white {
@@ -1094,9 +1095,152 @@ header {
   transition: 0.2s;
 }
 
-.sme-content img {
-  width: 100px;
+.big-content {
+  position: relative;
 }
+
+
+.big-content img {
+  width: 200px;
+  position: absolute;
+  top: -120px !important;
+  left: 32%;
+}
+
+/* ----------------------------- */
+
+
+.news {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(235,120,36);
+}
+
+.news .news-left {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 20%; */
+  height: 100%;
+  background-color: #f1f1f1;
+  clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
+}
+
+.news-left p {
+  color: #555555;
+  margin: 0;
+  font-weight: 600;
+}
+
+.news .news-right {
+  flex: 4 !important;
+  /* width: 80%; */
+  height: 100%;
+  background-color: rgb(254,243,235);
+  clip-path: polygon(2.5% 0%, 100% 0%, 100% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+}
+
+.news-right marquee p {
+  display: inline-block;
+  margin: 0 10px;
+  color: #555555;
+}
+
+.news-bottom-lines {
+  height: 7px;
+}
+
+.news-bottom-line div {
+  height: 100%;
+}
+
+.blue-line {
+  background-color: rgb(17,76,141);
+  flex: 5;
+}
+
+.red-line {
+  background-color: rgb(211,46,18);
+  flex: 4;
+}
+
+.green-line {
+  background-color: rgb(155,192,2);
+  flex: 3;
+}
+
+.yellow-line {
+  background-color: rgb(235,120,36);
+  flex: 2;
+}
+
+.purple-line {
+  background-color: rgb(5,122,130);
+  flex: 1;
+}
+
+
+/* ----------------------------------- */
+
+
+.section-eight {
+  padding: 40px 0;
+}
+
+.s8-main {
+  overflow-x: scroll;
+  gap: 20px;
+  padding: 50px 10px;
+}
+
+.one-s8-box {
+  width: 180px;
+  min-width: 180px;
+  padding: 20px 0;
+  height: 150px;
+  border: 4px solid rgb(204, 216, 230);
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.one-s8-box a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.one-s8-box:hover {
+  border-color: rgb(235,120,36);
+  background-color: rgb(235,120,36);
+  box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
+-webkit-box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
+-moz-box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
+}
+
+
+.one-s8-box:hover a p {
+  color: white;
+}
+
+.one-s8-box:hover a svg > path {
+  color: white;
+  fill: white;
+}
+
+
+.one-s8-box a p {
+  margin: 0;
+  color: #555555;
+}
+
+
+
 
 
 @media (max-width: 992px) {
