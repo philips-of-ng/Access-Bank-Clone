@@ -856,16 +856,23 @@ header {
 
 .section-four {
   padding: 40px;
-  background: url(../images/lg-banner-1.png);
+  background: url(../images/access-money-bg.png), rgb(164, 197, 25);
   width: 100%;
   height: 400px;
-  background-size: cover;
+  background-size: 33.33%;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
+/* .wahala {
+  height: 200px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+} */
+
 .sme-card {
   height: fit-content;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
   backdrop-filter: blur(10px);
   margin: 100px !important;
 }
@@ -898,6 +905,72 @@ header {
   background: transparent;
   transition: 0.2s;
 }
+
+.access-more-green {
+  background-color: rgb(164, 197, 25);
+  padding: 7px 14px;
+  border: 2px solid rgb(164, 197, 25);
+  transition: 0.2s;
+  color: white;
+}
+
+.access-more-green:hover {
+  color: rgb(164, 197, 25);
+  background-color: transparent;
+}
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+
+
+.section-five {
+  padding: 40px;
+  background: url(../images/promotions-photo.png);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sme-card {
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  margin: 100px !important;
+}
+
+.sme-card .slant {
+  clip-path: polygon(80% 0, 100% 0, 0 100%, 0 80%);
+  background-color: rgb(235,120,36);
+  height: 50px;
+  width: 50px;
+}
+
+.sme-content > h3:nth-of-type(1) {
+  color: rgb(164, 197, 25);
+  font-weight: 800;
+}
+
+/* .sme-content h5 {
+  color: rgb(164, 197, 25);
+} */
+
+.access-more-orange {
+  background-color: rgb(235,120,36);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid rgb(235,120,36);
+  transition: 0.2s;
+}
+
+.access-more-orange:hover {
+  color: rgb(235,120,36);
+  background: transparent;
+  transition: 0.2s;
+}
+
 
 
 
@@ -1123,6 +1196,13 @@ header {
 
   .car-bg {
     background-position: center;
+  }
+
+  .section-four {
+    /* min-height: 800px; */
+    align-items: start !important;
+    background-position: right bottom;
+    background-size: 50%;
   }
 }
 
