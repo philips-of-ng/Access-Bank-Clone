@@ -579,11 +579,6 @@ header {
 }
 
 
-
-
-
-
-
 @media (max-width: 1060px) {
   .bn-link {
     padding: 12px 5px;
@@ -648,6 +643,20 @@ header {
   transition: 0.2s;
 }
 
+.access-more-trans-black {
+  padding: 5px 10px;
+  border: 2px solid black;
+  color: black;
+  background: transparent;
+  transition: 0.2s;
+}
+
+.access-more-trans-black:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+
 .hero-carousel-item {
   height: 70vh !important;
 }
@@ -661,29 +670,12 @@ header {
 }
 
 .carousel-item:nth-of-type(1) .car-bg {
-  background: url(../images/business-banner-1.png);
+  background: url(../images/access_more_app_header_banner.png);
 }
-
-.carousel-item:nth-of-type(2) .car-bg {
-  background: url(../images/personal-banner-1.png);
-}
-
-.carousel-item:nth-of-type(3) .car-bg {
-  background: url(../images/access-business.png);
-}
-
-.carousel-item .car-bg .car-content {
-  color: white;
-}
-
-.carousel-indicators {
-  bottom: 20px !important;
-  left: 0 !important;
-}
-
 
 /* ---------------------------------- */
 /* ---------------------------------- */
+
 
 
 
@@ -753,520 +745,35 @@ header {
 
 /* ---------------------------- */
 
-.section-three {
-  padding-top: 40px;
-  position: relative;
-}
-
-.s3-top h2 {
-  color: rgb(0, 65, 133);
-}
-
-.s3-top p {
-  color: #555555;
-}
-
-.one-s3-card {
-  /* width: 33.33%; */
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding: 12px;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  /* background-position: center !important; */
-  background-position: right;
-  transition: 0.3s;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 24.16%, #000000 100%);
-}
-
-.s3-1 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 24.16%, #000000 100%), url(../images/bb-1.png);
-}
-
-.s3-2 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 24.16%, #000000 100%), url(../images/bb-2.png);
-}
-
-.s3-3 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 24.16%, #000000 100%), url(../images/bb-3.png);
-}
-
-.one-s3-card:hover .s3-card-bob {
-  display: block;
-  transition: 0.3s;
-}
-
-.one-s3-card:hover > div {
-  height: 70% !important;
-  transition: 0.3s;
-}
-
-.s3-card-bottom {
-  width: 100%;
-  height: 160px;
-  position: relative;
-  padding: 10px;
-  transition: height 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.s3-card-bottom img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-}
-
-.s3-card-bottom > div > p:nth-of-type(1) {
-  font-size: 20.5px;
-  font-weight: 400;
-  color: white;
-}
-
-.s3-card-bottom > div > p:nth-of-type(2) {
-  font-size: 17px;
-  color: white;
-}
-
-.s3-card-bob {
-  display: none;
-  transition: display 0.5s ease;
-}
-
-.s3-card-bottom .s3-card-bob p {
-  font-size: 14px;
-}
-
-.s3-card-btn {
-  color: white;
-  border: 2px solid white;
-  background: transparent;
-  padding: 7px 14px;
-  transition: 0.3s;
-}
-
-.s3-card-btn:hover {
-  color: black;
-  background-color: white;
-  transition: 0.3s;
-}
-
-
-.s3-cards {
-  position: absolute !important;
-  bottom: -80px !important;
-}
-
-.arrangee {
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 767px) {
-  .arrangee {
-    height: 1050px !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .arrangee {
-    height: 700px;
-  }
-}
-
-@media (min-width: 993px) {
-  .arrangee {
-    height: 350px;
-  }
-}
-
-/* -------------------------------- */
-
-
-.section-four {
-  background-color: rgb(1, 64, 134);
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 40px;
-  color: white;
-}
-
-.s4-top {
-
-}
-
-.s4-main {
-  gap: 40px;
-}
-
-.one-s4-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 270px;
-  background-color: white;
-}
-
-.one-s4-card .s4-text {
-  width: 60%;
-}
-
-.s4-text p:nth-of-type(1) {
-  font-size: 20px;
-  color: rgb(1, 64, 134);
-}
-
-.s4-text p:nth-of-type(2) {
-  color: #555555;
-}
-
-.one-s4-card .s4-img {
-  width: 40%;
-  height: 100% !important;
-  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
-  background-position: center;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-}
-
-.one-s4-card:nth-of-type(1) > .s4-img {
-  background: url(../images/offerings-card.png);
-}
-
-.one-s4-card:nth-of-type(2) > .s4-img {
-  background: url(../images/loans-card.png);
-}
-
-
-
-.access-more-trans-blue {
-  padding: 7px 14px;
-  border: 2px solid rgb(1, 64, 134);
-  color: rgb(1, 64, 134);
-  transition: 0.2s;
-  background-color: transparent;
-}
-
-.access-more-trans-blue:hover {
-  color: white;
-  background-color: rgb(1, 64, 134);
-}
-
-
-/* --------------------------------------- */
-
-
-.section-five {
-  padding: 40px;
-  background: url(../images/lg-banner-1.png);
-  width: 100%;
+.s3-container {
   height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: green;
 }
 
-.sme-card {
-  height: fit-content;
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  margin: 100px !important;
-}
-
-.sme-card .slant {
-  clip-path: polygon(80% 0, 100% 0, 0 100%, 0 80%);
-  background-color: rgb(235,120,36);
-  height: 50px;
-  width: 50px;
-}
-
-.sme-content {
-
-}
-
-.sme-content h5 {
-  color: rgb(164, 197, 25);
-}
-
-.access-more-orange {
-  background-color: rgb(235,120,36);
-  color: white;
-  padding: 10px 20px;
-  border: 2px solid rgb(235,120,36);
-  transition: 0.2s;
-}
-
-.access-more-orange:hover {
-  color: rgb(235,120,36);
-  background: transparent;
-  transition: 0.2s;
-}
-
-/* ---------------------------------- */
-/* ---------------------------------- */
-/* ---------------------------------- */
-
-
-.section-six {
-  width: 100%;
-  height: fit-content;
-  background-color: white;
-  padding: 50px 0;
-}
-
-.s6-top {
-  color: rgb(1, 64, 134);
-}
-
-.s6-grid {
-  height: fit-content;
-  padding: 20px 0;
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-inline: auto;
-}
-
-.one-s6-card {
-  /* width: 280px; */
-  height: 320px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding: 12px;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  transition: 0.3s;
-  margin-inline: auto !important;
-  cursor: pointer;
-}
-
-.s6-1 {
-  background: url(../images/service-1.png);
-}
-
-.s6-2 {
-  background: url(../images/service-3.png);
-}
-
-.s6-3 {
-  background: url(../images/service-2.png);
-}
-
-.s6-4 {
-  background: url(../images/service-3.png);
-}
-
-.one-s6-card:hover .s6-card-bob {
-  display: block;
-  transition: 0.3s;
-}
-
-.one-s6-card:hover > div {
-  height: 80% !important;
-  transition: 0.3s;
-}
-
-.s6-card-bottom {
-  width: 100%;
-  height: 150px;
-  position: relative;
-  backdrop-filter: blur(15px);
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  transition: height 0.3s ease;
-}
-
-.s6-card-bottom img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-}
-
-.s6-card-bottom > p {
-  font-size: 20px;
-  font-weight: 600;
-  color: black;
-}
-
-.s6-card-bob {
-  display: none;
-  transition: display 0.5s ease;
-}
-
-.s6-card-bottom p:nth-of-type(2) {
-  font-size: 17px;
-  font-weight: 400;
-}
-
-.access-more-green {
-  color: rgb(164, 197, 25);
-  border: 2px solid rgb(164, 197, 25);
-  background: transparent;
-  padding: 10px 20px;
-  transition: 0.3s;
-}
-
-.access-more-green:hover {
-  color: white;
-  background-color: rgb(164, 197, 25);
-  transition: 0.3s;
-}
-
-.access-more-deep-green {
-  padding: 10px 15px;
-  background-color: rgb(164, 197, 25);
-  color: white;
-  border: 1.5px solid rgb(164, 197, 25);
-  transition: 0.2s;
-}
-
-.access-more-deep-green:hover {
-  background-color: transparent;
-  color: rgb(164, 197, 25);
-  transition: 0.2s;
-}
-
-
-/* ------------------------------------ */
-/* ------------------------------------ */
-/* ------------------------------------ */
-
-
-.news {
-  width: 100%;
-  height: 40px;
-  background-color: rgb(235,120,36);
-}
-
-.news .news-left {
-  flex: 1.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: 20%; */
-  height: 100%;
-  background-color: #f1f1f1;
-  clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
-}
-
-.news-left p {
-  color: #555555;
-  margin: 0;
-  font-weight: 600;
-}
-
-.news .news-right {
-  flex: 4 !important;
-  /* width: 80%; */
-  height: 100%;
-  background-color: rgb(254,243,235);
-  clip-path: polygon(2.5% 0%, 100% 0%, 100% 100%, 0% 100%);
-  display: flex;
-  align-items: center;
-}
-
-.news-right marquee p {
-  display: inline-block;
-  margin: 0 10px;
-  color: #555555;
-}
-
-.news-bottom-lines {
-  height: 7px;
-}
-
-.news-bottom-line div {
+.s3-container > div {
   height: 100%;
 }
 
-.blue-line {
-  background-color: rgb(17,76,141);
-  flex: 5;
-}
-
-.red-line {
-  background-color: rgb(211,46,18);
-  flex: 4;
-}
-
-.green-line {
-  background-color: rgb(155,192,2);
-  flex: 3;
-}
-
-.yellow-line {
-  background-color: rgb(235,120,36);
-  flex: 2;
-}
-
-.purple-line {
-  background-color: rgb(5,122,130);
-  flex: 1;
-}
-
-
-/* ----------------------------------- */
-
-
-.section-eight {
-  padding: 40px 0;
-}
-
-.s8-main {
-  overflow-x: scroll;
-  gap: 20px;
-  padding: 50px 10px;
-}
-
-.one-s8-box {
-  width: 180px;
-  min-width: 180px;
-  padding: 20px 0;
-  height: 150px;
-  border: 4px solid rgb(204, 216, 230);
-  padding: 12px;
-  transition: 0.3s;
-}
-
-.one-s8-box a {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.s3-tabs {
   height: 100%;
+}
+.s3-tabs > div:nth-of-type(1) {
+  height: 50%;
   width: 100%;
+  background-color: purple;
 }
-
-.one-s8-box:hover {
-  border-color: rgb(235,120,36);
-  background-color: rgb(235,120,36);
-  box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
--webkit-box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
--moz-box-shadow: 0px 0px 80px -20px rgba(235,120,36,1);
-}
-
-
-.one-s8-box:hover a p {
-  color: white;
-}
-
-.one-s8-box:hover a svg > path {
-  color: white;
-  fill: white;
+.s3-tabs > div:nth-of-type(2) {
+  height: 50%;
+  width: 100%;
+  background-color: brown;
 }
 
 
-.one-s8-box a p {
-  margin: 0;
-  color: #555555;
+.s3-img {
+  height: 100% !important;
+  background-color: blue;
 }
+
 
 
 
