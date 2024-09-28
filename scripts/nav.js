@@ -240,6 +240,37 @@ prbnd.addEventListener('mouseleave', () => {
 
 
 
+// I AM
+
+const iamUnderlay = document.getElementById('nav-drops-underlay-5');
+const iamnd = document.getElementById('iam-nd');
+const iamndControl = document.getElementById('iam-nd-control');
+
+function closeiamnd() {
+  iamnd.classList.remove('activate-nav-drops-in');
+  iamUnderlay.classList.remove('activate-nav-drops');
+}
+
+iamndControl.addEventListener('mouseover', () => {
+  iamUnderlay.classList.add('activate-nav-drops');
+  iamnd.classList.add('activate-nav-drops-in');
+});
+
+iamndControl.addEventListener('mouseleave', () => {
+  closeiamnd();
+});
+
+iamnd.addEventListener('mouseover', () => {
+  iamnd.classList.add('activate-nav-drops-in');
+  iamUnderlay.classList.add('activate-nav-drops');
+});
+
+iamnd.addEventListener('mouseleave', () => {
+  closeiamnd();
+});
+
+
+
 
 
 
